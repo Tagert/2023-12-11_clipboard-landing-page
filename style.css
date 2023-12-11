@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --primary-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px 20px 24px;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  background-color: #f5f6f8;
+}
+
+.header-section-page {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px 20px 24px;
+  background-image: url(./images/bg-header-mobile.png);
+  background-size: cover;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.main-log img {
+  height: 125px;
+}
+
+.main-text-style h1 {
+  text-align: center;
+  font-size: 32px;
+  padding: 20px 5px 15px 5px;
+  color: #50555b;
+}
+
+.main-text-style p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0px 0px 20px 0px;
+  color: #bec2c5;
+}
+
+.main-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-btn button {
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: var(--primary-box-shadow);
+  font-size: 16px;
+  font-weight: 600;
+  color: #dfffff;
+  background-color: hsl(171, 66%, 44%);
+}
+
+.main-btn button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.main-btn button:nth-child(2) {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.main-text-style h2 {
+  text-align: center;
+  padding: 20px 5px 15px 5px;
+  color: #50555b;
+}
+
+.monitor-image,
+.tablet-image,
+.perks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0 35px 0px;
+}
+
+.blacklist,
+.snippets,
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.blacklist img,
+.snippets img {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+}
+
+.preview img {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+}
+
+.monitor-image img,
+.tablet-image img {
+  height: 240px;
+}
+
+.before-tablet-pic {
+  margin-top: 125px;
+}
+
+.after-monitor-pic,
+.after-tablet-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.after-monitor-pic img {
+  margin: 30px 0px 30px 0px;
+}
+
+.company-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px 20px 24px;
+  gap: 60px;
+}
+
+.company-logos img {
+  height: 36px;
+}
+
+.bottom-section-page {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px 20px 24px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.footer-section img {
+  height: 50px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #50555b;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.footer-section a:hover {
+  cursor: pointer;
+  color: hsl(171, 66%, 44%);
+  font-weight: bold;
+}
+
+.contact,
+.privacy,
+.install {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 120px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.icons img {
+  height: 20px;
+}
+
+.icons img:hover {
+  cursor: pointer;
+  filter: invert(57%) sepia(68%) saturate(412%) hue-rotate(122deg)
+    brightness(92%) contrast(100%);
+}
+
+@media screen and (min-width: 600px) {
+  .main-text-style {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    max-width: 510px;
+  }
+
+  .main-btn {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header-section-page {
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+  }
+
+  .monitor-image img,
+  .tablet-image img {
+    height: 280px;
+  }
+
+  .monitor-and-text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .after-monitor-pic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 350px;
+  }
+
+  .after-monitor-pic p {
+    text-align: left;
+  }
+
+  .after-tablet-pic {
+    max-width: 800px;
+  }
+
+  .perks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 800px;
+  }
+
+  .blacklist,
+  .snippets,
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .monitor-image img {
+    height: 320px;
+    margin-left: 20px;
+  }
+
+  .tablet-image img {
+    height: 320px;
+  }
+
+  .company-logos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-logos img {
+    height: 36px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    gap: 60px;
+  }
+
+  .footer-section > img:nth-child(1) {
+    margin: 0px 80px 0px 0px;
+  }
+
+  .contact,
+  .privacy,
+  .install {
+    align-items: flex-start;
+    width: 200px;
+  }
+
+  .install {
+    margin-right: 80px;
+  }
+
+  .icons {
+    display: flex;
+    max-width: 25px;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .monitor-image img {
+    height: 380px;
+    margin-left: 40px;
+  }
+
+  .tablet-image img {
+    height: 380px;
+  }
+
+  .footer-section > img:nth-child(1) {
+    margin: 0px 160px 0px 0px;
+  }
+
+  .install {
+    margin-right: 120px;
+  }
+
+  .main-btn button {
+    width: 260px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .footer-section > img:nth-child(1) {
+    margin: 0px 80px 0px 0px;
+  }
+
+  .monitor-image img {
+    height: 420px;
+    margin-left: 60px;
+  }
+
+  .tablet-image img {
+    height: 420px;
+  }
+
+  .main-btn button {
+    width: 240px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .monitor-image img {
+    height: 520px;
+    margin-left: 100px;
+  }
+
+  .tablet-image img {
+    height: 520px;
+  }
+
+  .main-btn button {
+    width: 240px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .monitor-image img {
+    height: 580px;
+    margin-left: 120px;
+  }
+
+  .tablet-image img {
+    height: 580px;
+  }
+}
